@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 460px;
+    height: 230px;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .cell h4 {
+    z-index: 1;
+    color: #f76747;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3870f1;
+}
+
+.cell img {
+    width: 430px;
+    height:210px;
+    position: absolute;
+}
+
+  .cell:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+  }
+
+  
+  #top {
+    display: flex;
+    align-items: center;
+  }
+
+
+#shop_title {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 3em;
+  color: #fff;
+  text-transform: uppercase;
+  animation: neon 1.5s infinite alternate;
+}
+
+#shop_image{
+  height: 300px;
+}
+
+.pictures_of_service {
+  width: 400px;
+  height: 145px;
+}
+
+#footer  {
+  font-size: smaller; 
+  color: #666; 
+  margin-top: 20px; 
+}
+
+.contact_us {
+  border-color: black;
+  border-style: groove;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.gradient {
+    background: -webkit-linear-gradient(135deg, #f76747, #3870f1);
+    background: -moz-linear-gradient(135deg, #f76747, #3870f1);
+    background: -o-linear-gradient(135deg, #f76747, #3870f1);
+    background: linear-gradient(135deg, #f76747, #3870f1);
+    background-color: #FF5733; 
+}
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 10px #882b2b, 0 0 20px #092d64, 0 0 30px #fff, 0 0 40px rgb(255, 0, 64), 0 0 70px #1100ff, 0 0 80px #1100ff, 0 0 100px #1100ff, 0 0 150px #1100ff;
+  }
+  50% {
+      text-shadow: 0 0 10px #882b2b, 0 0 20px #092d64, 0 0 30px #fff, 0 0 40px rgb(255, 0, 64), 0 0 70px rgb(255, 0, 64), 0 0 80px rgb(255, 0, 64), 0 0 100px rgb(255, 0, 64), 0 0 150px rgb(255, 0, 64);
+    }
+    100% {
+      text-shadow: 0 0 10px #882b2b, 0 0 20px #092d64, 0 0 30px #fff, 0 0 40px rgb(255, 0, 64), 0 0 70px rgb(255, 0, 64), 0 0 80px rgb(255, 0, 64), 0 0 100px rgb(255, 0, 64), 0 0 150px rgb(255, 0, 64);
+    }
+  }
